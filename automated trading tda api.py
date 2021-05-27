@@ -1,5 +1,5 @@
 #!pip install tda-api             #open source library using TD Ameritrade API
-#!pip install ta                  #technical analysis for trading
+#!pip install ta                  #technical analysis library for calculating financial ratios
 #!pip install webdriver-manager   #brower control to login
 
 import tda
@@ -17,7 +17,7 @@ from contextlib import suppress
 import json
 from selenium import webdriver                        
 from webdriver_manager.chrome import ChromeDriverManager
-import ta                                             #technical analysis library
+import ta                                             
 import math
 import numpy as np
 import pandas as pd
