@@ -17,7 +17,7 @@ from contextlib import suppress
 import json
 from selenium import webdriver                        
 from webdriver_manager.chrome import ChromeDriverManager
-import ta
+import ta                                             #technical analysis library
 import math
 import numpy as np
 import pandas as pd
@@ -93,7 +93,7 @@ class Bot():
             self.symbol = input("Enter the ticker you want to trade : ")
             
             #Get candle stick
-            self.barsize = int(input("Enter the barsize you want to trade in mintutes : "))
+            self.barsize = int(input("Enter the barsize you want to trade in minutes : "))
             self.stream_client = StreamClient(self.client, account_id=self.account_id)
             #run program asynchronously
             asyncio.run(self.read_stream())
